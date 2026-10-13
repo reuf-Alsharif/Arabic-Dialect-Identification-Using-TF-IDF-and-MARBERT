@@ -8,6 +8,21 @@ Arabic dialect recognition is challenging because regional varieties often share
 
 This project investigates two approaches to this problem: a feature-based classifier using TF-IDF and Logistic Regression, and a transformer-based classifier built on MARBERT. The goal is to examine their performance on a multi-class Arabic dialect classification task.
 
+
+## Dataset
+
+- **Dataset size:** 112,000 records
+- **Number of classes:** 16 Arabic dialect categories
+- **Input feature:** Arabic text (`sent`)
+- **Target label:** Country/dialect label (`country`)
+- **Source:** [Kaggle – Arabic Dialect Dataset](https://www.kaggle.com/code/ammarnassanalhajali/text-classification-arabic-dialect-getting-data/notebook)
+
+The dataset covers multiple Arabic dialects, including Saudi, Egyptian, Iraqi, Moroccan, and other regional varieties, in addition to Modern Standard Arabic (MSA).
+
+Preprocessing included removing missing text and labels, normalizing Arabic characters, and splitting the data into training and validation sets using an 85:15 ratio.
+
+
+
 ## The Experiment
 
 The workflow uses Arabic text as input and the corresponding country label as the target.
